@@ -12,12 +12,12 @@ MG811::MG811(const float& v_res, const int& adc_bit, const int& input, const flo
 
 void MG811::set_clean_air(const float& ratio_clean_air, const float& ppm) {
     ppm_clean_air = ppm;
-    v_clean_air = ratio_clean_air*v_res;
+    v_clean_air = ratio_clean_air*_v_res;
 }
 
 void MG811::set_dirty_air(const float& ratio_dirty_air, const float& ppm) {
     ppm_dirty_air = ppm;
-    v_dirty_air = ratio_dirty_air*v_res;
+    v_dirty_air = ratio_dirty_air*_v_res;
 }
 
 void MG811::init(const int& time_in_ms) {

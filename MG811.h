@@ -5,7 +5,7 @@
 
 class MG811{
     public:
-        MG811(const float& v_res = 5, const int& adc_bit = 8, const int& input = 1, const float& ratio_clean_air = 0.3, const float& ratio_dirty_air = 0.9);
+        MG811(const float& v_res = 5, const int& adc_bit = 8, const int& input = 1, const float& ratio_clean_air = 0.6412, const float& ratio_dirty_air = 0.907);
         void init(const int& time_in_ms = 50);
         void set_clean_air(const float& ratio_clean_air, const float& ppm);
         void set_dirty_air(const float& ratio_dirty_air, const float& ppm);
